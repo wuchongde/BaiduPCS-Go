@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"crypto/md5"
 	"encoding/hex"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/converter"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/cachepool"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/converter"
 )
 
 func DevUID(feature string) string {

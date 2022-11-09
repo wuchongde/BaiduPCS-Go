@@ -2,9 +2,9 @@ package pcsdownload
 
 import (
 	"encoding/hex"
-	"github.com/felixonmars/BaiduPCS-Go/baidupcs"
-	"github.com/felixonmars/BaiduPCS-Go/internal/pcsconfig"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/checksum"
+	"github.com/wuchongde/BaiduPCS-Go/baidupcs"
+	"github.com/wuchongde/BaiduPCS-Go/internal/pcsconfig"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/checksum"
 	"net/url"
 	"os"
 )

@@ -3,7 +3,7 @@ package pcsutil
 import (
 	"fmt"
 	"github.com/fatih/color"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/pcstime"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/pcstime"
 	"log"
 )
 

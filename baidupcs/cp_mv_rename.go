@@ -1,7 +1,7 @@
 package baidupcs
 
 import (
-	"github.com/felixonmars/BaiduPCS-Go/baidupcs/pcserror"
+	"github.com/wuchongde/BaiduPCS-Go/baidupcs/pcserror"
 	"unsafe"
 )
 

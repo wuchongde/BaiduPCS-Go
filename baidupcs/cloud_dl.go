@@ -2,10 +2,10 @@ package baidupcs
 
 import (
 	"errors"
-	"github.com/felixonmars/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/felixonmars/BaiduPCS-Go/pcstable"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/converter"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/pcstime"
+	"github.com/wuchongde/BaiduPCS-Go/baidupcs/pcserror"
+	"github.com/wuchongde/BaiduPCS-Go/pcstable"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/converter"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/pcstime"
 	"io"
 	"path"
 	"strconv"

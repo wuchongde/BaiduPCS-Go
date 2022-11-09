@@ -2,9 +2,9 @@ package baidupcs
 
 import (
 	"errors"
-	"github.com/felixonmars/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/converter"
+	"github.com/wuchongde/BaiduPCS-Go/baidupcs/pcserror"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/converter"
 	"path"
 	"strings"
 )

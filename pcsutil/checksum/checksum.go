@@ -3,8 +3,8 @@ package checksum
 
 import (
 	"crypto/md5"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/converter"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/cachepool"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/converter"
 	"hash/crc32"
 	"io"
 	"os"

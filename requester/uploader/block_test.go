@@ -2,10 +2,10 @@ package uploader_test
 
 import (
 	"fmt"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/felixonmars/BaiduPCS-Go/requester/rio"
-	"github.com/felixonmars/BaiduPCS-Go/requester/transfer"
-	"github.com/felixonmars/BaiduPCS-Go/requester/uploader"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/cachepool"
+	"github.com/wuchongde/BaiduPCS-Go/requester/rio"
+	"github.com/wuchongde/BaiduPCS-Go/requester/transfer"
+	"github.com/wuchongde/BaiduPCS-Go/requester/uploader"
 	"io"
 	"testing"
 )
@@ -21,7 +21,7 @@ func TestSplitBlock(t *testing.T) {
 }
 
 func TestSplitUnitRead(t *testing.T) {
-	var size int64 = 65536*2+3432
+	var size int64 = 65536*2 + 3432
 	buffer := rio.NewBuffer(cachepool.RawMallocByteSlice(int(size)))
 	unit := uploader.NewBufioSplitUnit(buffer, transfer.Range{Begin: 2, End: size}, nil, nil)
 

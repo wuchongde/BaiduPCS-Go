@@ -1,7 +1,7 @@
 package pcsconfig
 
 import (
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/converter"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/converter"
 	"strings"
 )
 

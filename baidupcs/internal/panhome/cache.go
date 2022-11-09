@@ -1,7 +1,7 @@
 package panhome
 
 import (
-	"github.com/felixonmars/BaiduPCS-Go/baidupcs/expires"
+	"github.com/wuchongde/BaiduPCS-Go/baidupcs/expires"
 	"time"
 )
 

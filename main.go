@@ -3,25 +3,25 @@ package main
 import (
 	"encoding/hex"
 	"fmt"
-	"github.com/felixonmars/BaiduPCS-Go/baidupcs"
-	"github.com/felixonmars/BaiduPCS-Go/internal/pcscommand"
-	"github.com/felixonmars/BaiduPCS-Go/internal/pcsconfig"
-	"github.com/felixonmars/BaiduPCS-Go/internal/pcsfunctions/pcsdownload"
-	_ "github.com/felixonmars/BaiduPCS-Go/internal/pcsinit"
-	"github.com/felixonmars/BaiduPCS-Go/internal/pcsupdate"
-	"github.com/felixonmars/BaiduPCS-Go/pcsliner"
-	"github.com/felixonmars/BaiduPCS-Go/pcsliner/args"
-	"github.com/felixonmars/BaiduPCS-Go/pcstable"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/checksum"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/converter"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/escaper"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/getip"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/pcstime"
-	"github.com/felixonmars/BaiduPCS-Go/pcsverbose"
 	"github.com/olekukonko/tablewriter"
 	"github.com/peterh/liner"
 	"github.com/urfave/cli"
+	"github.com/wuchongde/BaiduPCS-Go/baidupcs"
+	"github.com/wuchongde/BaiduPCS-Go/internal/pcscommand"
+	"github.com/wuchongde/BaiduPCS-Go/internal/pcsconfig"
+	"github.com/wuchongde/BaiduPCS-Go/internal/pcsfunctions/pcsdownload"
+	_ "github.com/wuchongde/BaiduPCS-Go/internal/pcsinit"
+	"github.com/wuchongde/BaiduPCS-Go/internal/pcsupdate"
+	"github.com/wuchongde/BaiduPCS-Go/pcsliner"
+	"github.com/wuchongde/BaiduPCS-Go/pcsliner/args"
+	"github.com/wuchongde/BaiduPCS-Go/pcstable"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/checksum"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/converter"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/escaper"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/getip"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/pcstime"
+	"github.com/wuchongde/BaiduPCS-Go/pcsverbose"
 	"os"
 	"os/exec"
 	"path"
@@ -95,7 +95,7 @@ func main() {
 	app := cli.NewApp()
 	app.Name = "BaiduPCS-Go"
 	app.Version = Version
-	app.Author = "iikira/BaiduPCS-Go: https://github.com/felixonmars/BaiduPCS-Go"
+	app.Author = "iikira/BaiduPCS-Go: https://github.com/wuchongde/BaiduPCS-Go"
 	app.Copyright = "(c) 2016-2020 iikira."
 	app.Usage = "百度网盘客户端 for " + runtime.GOOS + "/" + runtime.GOARCH
 	app.Description = `BaiduPCS-Go 使用Go语言编写的百度网盘命令行客户端, 为操作百度网盘, 提供实用功能.
@@ -106,12 +106,12 @@ func main() {
 		下载网盘内文件, 支持网盘内目录 (文件夹) 下载, 支持多个文件或目录下载, 支持断点续传和高并发高速下载.
 
 	---------------------------------------------------
-	前往 https://github.com/felixonmars/BaiduPCS-Go 以获取更多帮助信息!
-	前往 https://github.com/felixonmars/BaiduPCS-Go/releases 以获取程序更新信息!
+	前往 https://github.com/wuchongde/BaiduPCS-Go 以获取更多帮助信息!
+	前往 https://github.com/wuchongde/BaiduPCS-Go/releases 以获取程序更新信息!
 	---------------------------------------------------
 
 	交流反馈:
-		提交Issue: https://github.com/felixonmars/BaiduPCS-Go/issues
+		提交Issue: https://github.com/wuchongde/BaiduPCS-Go/issues
 		邮箱: i@mail.iikira.com`
 
 	app.Flags = []cli.Flag{
@@ -408,7 +408,7 @@ func main() {
 		按提示一步一步来即可.
 
 	百度BDUSS获取方法:
-		参考这篇 Wiki: https://github.com/felixonmars/BaiduPCS-Go/wiki/关于-获取百度-BDUSS
+		参考这篇 Wiki: https://github.com/wuchongde/BaiduPCS-Go/wiki/关于-获取百度-BDUSS
 		或者百度搜索: 获取百度BDUSS`,
 			Category: "百度帐号",
 			Before:   reloadFn,

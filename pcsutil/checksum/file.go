@@ -2,7 +2,7 @@ package checksum
 
 import (
 	"bytes"
-	"github.com/felixonmars/BaiduPCS-Go/baidupcs"
+	"github.com/wuchongde/BaiduPCS-Go/baidupcs"
 	"path/filepath"
 )
 

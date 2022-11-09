@@ -2,7 +2,7 @@ package pcscommand
 
 import (
 	"fmt"
-	"github.com/felixonmars/BaiduPCS-Go/baidupcs"
+	"github.com/wuchongde/BaiduPCS-Go/baidupcs"
 	"strings"
 )
 

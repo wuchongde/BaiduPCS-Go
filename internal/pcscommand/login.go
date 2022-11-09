@@ -3,12 +3,13 @@ package pcscommand
 import (
 	"bytes"
 	"fmt"
-	"github.com/felixonmars/Baidu-Login"
-	"github.com/felixonmars/BaiduPCS-Go/internal/pcsfunctions/pcscaptcha"
-	"github.com/felixonmars/BaiduPCS-Go/pcsliner"
-	"github.com/felixonmars/BaiduPCS-Go/requester"
 	"image/png"
 	"io/ioutil"
+
+	"github.com/wuchongde/BaiduPCS-Go/internal/pcsfunctions/pcscaptcha"
+	"github.com/wuchongde/BaiduPCS-Go/pcsliner"
+	"github.com/wuchongde/BaiduPCS-Go/requester"
+	baidulogin "github.com/wuchongde/baidu-tools"
 )
 
 // handleVerifyImg 处理验证码, 下载到本地

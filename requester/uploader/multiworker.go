@@ -2,8 +2,8 @@ package uploader
 
 import (
 	"context"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/waitgroup"
 	"github.com/oleiade/lane"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/waitgroup"
 	"os"
 )
 

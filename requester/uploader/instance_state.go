@@ -1,7 +1,7 @@
 package uploader
 
 import (
-	"github.com/felixonmars/BaiduPCS-Go/requester/transfer"
+	"github.com/wuchongde/BaiduPCS-Go/requester/transfer"
 )
 
 type (

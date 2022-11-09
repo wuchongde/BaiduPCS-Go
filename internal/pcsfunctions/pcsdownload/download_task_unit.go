@@ -3,17 +3,17 @@ package pcsdownload
 import (
 	"errors"
 	"fmt"
-	"github.com/felixonmars/BaiduPCS-Go/baidupcs"
-	"github.com/felixonmars/BaiduPCS-Go/baidupcs/pcserror"
-	"github.com/felixonmars/BaiduPCS-Go/internal/pcsconfig"
-	"github.com/felixonmars/BaiduPCS-Go/internal/pcsfunctions"
-	"github.com/felixonmars/BaiduPCS-Go/pcstable"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/converter"
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/taskframework"
-	"github.com/felixonmars/BaiduPCS-Go/pcsverbose"
-	"github.com/felixonmars/BaiduPCS-Go/requester"
-	"github.com/felixonmars/BaiduPCS-Go/requester/downloader"
-	"github.com/felixonmars/BaiduPCS-Go/requester/transfer"
+	"github.com/wuchongde/BaiduPCS-Go/baidupcs"
+	"github.com/wuchongde/BaiduPCS-Go/baidupcs/pcserror"
+	"github.com/wuchongde/BaiduPCS-Go/internal/pcsconfig"
+	"github.com/wuchongde/BaiduPCS-Go/internal/pcsfunctions"
+	"github.com/wuchongde/BaiduPCS-Go/pcstable"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/converter"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/taskframework"
+	"github.com/wuchongde/BaiduPCS-Go/pcsverbose"
+	"github.com/wuchongde/BaiduPCS-Go/requester"
+	"github.com/wuchongde/BaiduPCS-Go/requester/downloader"
+	"github.com/wuchongde/BaiduPCS-Go/requester/transfer"
 	"io"
 	"net/http"
 	"os"
@@ -143,7 +143,7 @@ func (dtu *DownloadTaskUnit) download(downloadURL string, client *requester.HTTP
 		if dtu.IsPrintStatus {
 			// 输出所有的worker状态
 			var (
-				tb      = pcstable.NewTable(builder)
+				tb = pcstable.NewTable(builder)
 			)
 			tb.SetHeader([]string{"#", "status", "range", "left", "speeds", "error"})
 			workersCallback(func(key int, worker *downloader.Worker) bool {
@@ -166,7 +166,7 @@ func (dtu *DownloadTaskUnit) download(downloadURL string, client *requester.HTTP
 			leftStr = left.String()
 		}
 
-		fmt.Fprintf(builder,dtu.PrintFormat, dtu.taskInfo.Id(),
+		fmt.Fprintf(builder, dtu.PrintFormat, dtu.taskInfo.Id(),
 			converter.ConvertFileSize(status.Downloaded(), 2),
 			converter.ConvertFileSize(status.TotalSize(), 2),
 			converter.ConvertFileSize(status.SpeedsPerSecond(), 2),

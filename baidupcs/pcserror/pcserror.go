@@ -2,7 +2,7 @@
 package pcserror
 
 import (
-	"github.com/felixonmars/BaiduPCS-Go/pcsutil/jsonhelper"
+	"github.com/wuchongde/BaiduPCS-Go/pcsutil/jsonhelper"
 	"io"
 )
 
